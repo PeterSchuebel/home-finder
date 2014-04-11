@@ -125,21 +125,27 @@ def write_stations(stations, csv_filename):
         stations_writer = csv.writer(stations_file, delimiter=',')
         for s in stations:
             stations_writer.writerow(s.string_list())
-    
+
+def address_to_filename(address):
+    f = str(address).strip()
+    f = f.replace(' ', '-').replace(',', '_').replace(':', '_').replace(';', '_')
+    return f
     
 if __name__ == '__main__':
     gmaps = googlemaps.GoogleMaps(gmaps_api_key, gmaps_referrer_url)
-    uk_stations_filename = r'NationalRail_station_codes.csv'
-    stations_near_0_filename = r'stations_near_London.csv'
-    stations_near_1_filename = r'stations_near_1.csv'
-    stations_near_2_filename = r'stations_near_2.csv'
-
+    
     # Options
     address0 = 'London, UK'
     address1 = 'SE1 1PP, UK'
     address2 = 'West Byfleet, UK'
     radius0 = 50000 #50km
     radius1 = radius2 = 45000 #45km
+    uk_stations_filename = r'NationalRail_station_codes.csv'
+
+    # import/export filenames depending on options
+    stations_near_0_filename = r'stations_%dm_near_%s.csv' % (radius0, address_to_filename(address0))
+    stations_near_1_filename = r'stations_%dm_near_%s.csv' % (radius1, address_to_filename(address1))
+    stations_near_2_filename = r'stations_%dm_near_%s.csv' % (radius2, address_to_filename(address2))
 
     # all UK rail stations
     uk_stations = read_stations(uk_stations_filename)
