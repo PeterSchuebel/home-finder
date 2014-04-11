@@ -80,23 +80,22 @@ class Station(object):
         return text
         
         
-def read_stations(uk_stations_filename=r'C:\data\TfL\NationalRail_station_codes.csv'):
-    uk_stations = list()
-    with open(uk_stations_filename, 'r') as uk_stations_file:
-        stations_reader = csv.reader(uk_stations_file, delimiter=',') 
-        for row in stations_reader:
-            uk_stations.append(Station(row[0], row[1]))
-    # remove entry from header
-    if uk_stations and uk_stations[0].name=='Station name':
-        uk_stations = uk_stations[1:]
-    logger.info("Found %d UK rail stations in CSV file '%s'!", len(uk_stations), uk_stations_filename)
-    return uk_stations
-
-def get_uk_stations_close_to(place_or_postcode, max_distance_in_m=50000):
+def read_stations(stations_filename):
     stations = list()
-    uk_stations = read_stations()
+    with open(stations_filename, 'r') as stations_file:
+        stations_reader = csv.reader(stations_file, delimiter=',') 
+        for row in stations_reader:
+            stations.append(Station(row[0], row[1]))
+    # remove entry from header
+    if stations and stations[0].name=='Station name':
+        stations = stations[1:]
+    logger.info("Found %d rail stations in CSV file '%s'!", len(stations), stations_filename)
+    return stations
+
+def get_stations_close_to(src_stations, place_or_postcode, max_distance_in_m=50000):
+    stations = list()
     errors = dict()
-    for station in uk_stations:
+    for station in src_stations:
         station_place = "%s, UK" % (station.name)
         logger.info("looking for directions from '%s' to '%s' ...", station_place, place_or_postcode)
         try:
@@ -130,14 +129,48 @@ def write_stations(stations, csv_filename):
     
 if __name__ == '__main__':
     gmaps = googlemaps.GoogleMaps(gmaps_api_key, gmaps_referrer_url)
-    stations_near_us_filename = r'stations_near_London.csv'
-    stations_near_d3_filename = r'stations_near_d3.csv'
-    stations_near_mbh_filename = r'stations_near_mbh.csv'
+    uk_stations_filename = r'NationalRail_station_codes.csv'
+    stations_near_0_filename = r'stations_near_London.csv'
+    stations_near_1_filename = r'stations_near_1.csv'
+    stations_near_2_filename = r'stations_near_2.csv'
+
+    # Options
+    address0 = 'London, UK'
+    address1 = 'SE1 1PP, UK'
+    address2 = 'West Byfleet, UK'
+    radius0 = 50000 #50km
+    radius1 = radius2 = 45000 #45km
+
+    # all UK rail stations
+    uk_stations = read_stations(uk_stations_filename)
+
+    # do this 3 times:
+    #   - load previously saved station list, or
+    #   - query it from google maps and save it for later use
     
-    stations_near_us = list()
-    if not os.path.exists(stations_near_us_filename):
-        stations_near_us = get_uk_stations_close_to('London, UK', 50000)
-        write_stations(stations_near_us, stations_near_us_filename)
+    # all rail stations in radius around London
+    stations_near_0 = list()
+    if not os.path.exists(stations_near_0_filename):
+        stations_near_0 = get_stations_close_to(uk_stations, address0, radius0)
+        write_stations(stations_near_0, stations_near_0_filename)
     else:
-        stations_near_us = read_stations(stations_near_us_filename)
+        stations_near_0 = read_stations(stations_near_0_filename)
+
+    # all rail stations in radius around my work
+    stations_near_1 = list()
+    if not os.path.exists(stations_near_1_filename):
+        stations_near_1 = get_stations_close_to(stations_near_0, address1, radius1)
+        write_stations(stations_near_1, stations_near_1_filename)
+    else:
+        stations_near_1 = read_stations(stations_near_1_filename)
+
+    # all rail stations in radius around Dori's work
+    stations_near_2 = list()
+    if not os.path.exists(stations_near_2_filename):
+        stations_near_2 = get_stations_close_to(stations_near_0, address2, radius2)
+        write_stations(stations_near_2, stations_near_2_filename)
+    else:
+        stations_near_2 = read_stations(stations_near_2_filename)
+
+    # TODO: merge work1 and work2 stations into common set
     
