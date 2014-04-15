@@ -126,6 +126,14 @@ def write_stations(stations, csv_filename):
         for s in stations:
             stations_writer.writerow(s.string_list())
 
+def merge_stations(stations1, stations2):
+    stations_merge = list()
+    for st in stations1:
+        if st in stations2:
+            stations_merge.append(st)
+    logger.info("merged %d stations from both lists", len(stations_merge))        
+    return stations_merge        
+
 def address_to_filename(address):
     f = str(address).strip()
     f = f.replace(' ', '-').replace(',', '_').replace(':', '_').replace(';', '_')
@@ -146,6 +154,8 @@ if __name__ == '__main__':
     stations_near_0_filename = r'stations_%dm_near_%s.csv' % (radius0, address_to_filename(address0))
     stations_near_1_filename = r'stations_%dm_near_%s.csv' % (radius1, address_to_filename(address1))
     stations_near_2_filename = r'stations_%dm_near_%s.csv' % (radius2, address_to_filename(address2))
+    stations_merge_filename = r'stations_%dm_near_%s_and_%dm_near_%s.csv' % (
+            radius1, address_to_filename(address1), radius2, address_to_filename(address2))
 
     # all UK rail stations
     uk_stations = read_stations(uk_stations_filename)
@@ -179,4 +189,10 @@ if __name__ == '__main__':
         stations_near_2 = read_stations(stations_near_2_filename)
 
     # TODO: merge work1 and work2 stations into common set
+    stations_merge = list()
+    if not os.path.exists(stations_merge_filename):
+        stations_merge = merge_stations(stations_near_1, stations_near_2)
+        write_stations(stations_merge, stations_merge_filename)
+    else:
+        stations_merge = read_stations(stations_merge_filename)
     
