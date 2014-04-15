@@ -32,6 +32,10 @@ class DistanceToPlace(object):
         self.distance = float(distance_in_m)
         self.duration = float(duration_in_s)
         self.directions = gmaps_directions
+    
+    def __eq__(self, rhs):
+        return (self.place==rhs.place and self.distance==rhs.distance and 
+                self.duration==rhs.duration and self.directions==rhs.directions)
 
     def string_list(self):
         return [self.place, self.distance, self.duration]
@@ -54,6 +58,18 @@ class Station(object):
         self.name = str(name)
         self.abbrev = str(abbrev)
         self.distance_to_places = list() #DistanceToPlace
+    
+    def __eq__(self, rhs):
+        if self.name!=rhs.name or self.abbrev!=rhs.abbrev:
+            return False
+        # check list in both directions (this, other), since order could be different
+        for d in self.distance_to_places:
+            if d not in rhs.distance_to_places:
+                return False
+        for d in rhs.distance_to_places:
+            if d not in self.distance_to_places:
+                return False
+        return True
 
     def string_list(self):
         stringlist = [self.name, self.abbrev]
