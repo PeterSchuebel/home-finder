@@ -101,7 +101,7 @@ def read_stations(stations_filename):
     with open(stations_filename, 'r') as stations_file:
         stations_reader = csv.reader(stations_file, delimiter=',') 
         for row in stations_reader:
-            stations.append(Station(row[0], row[1]))
+            stations.append(Station(row[0], row[1])) #TODO: read all data!
     # remove entry from header
     if stations and stations[0].name=='Station name':
         stations = stations[1:]
@@ -144,9 +144,18 @@ def write_stations(stations, csv_filename):
 
 def merge_stations(stations1, stations2):
     stations_merge = list()
-    for st in stations1:
-        if st in stations2:
-            stations_merge.append(st)
+    for st1 in stations1:
+        for st2 in stations2:
+            if st1.name==st2.name:
+                st = copy.deepcopy(st1)
+                # copy all new distance info without duplicates
+                unique_distpl = set()
+                for distpl in st.distance_to_places:
+                    unique_distpl.add(distpl)
+                for distpl in st2.distance_to_places:
+                    unique_distpl.add(distpl)
+                st.distance_to_places = list(unique_distpl)
+                stations_merge.append(st)
     logger.info("merged %d stations from both lists", len(stations_merge))        
     return stations_merge        
 
