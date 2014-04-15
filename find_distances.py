@@ -74,7 +74,7 @@ class Station(object):
     def string_list(self):
         stringlist = [self.name, self.abbrev]
         for dp in self.distance_to_places:
-            stringlist.append(dp.string_list())
+            stringlist.extend(dp.string_list())
         return stringlist
     
     def to_csv(self):
