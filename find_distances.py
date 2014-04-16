@@ -162,7 +162,8 @@ def merge_stations(stations1, stations2):
                 for distpl in st.distance_to_places:
                     unique_distpl.add(distpl)
                 for distpl in st2.distance_to_places:
-                    unique_distpl.add(distpl)
+                    if distpl.place not in [d.place for d in unique_distpl]:
+                        unique_distpl.add(distpl)
                 st.distance_to_places = list(unique_distpl)
                 stations_merge.append(st)
     logger.info("merged %d stations from both lists", len(stations_merge))        
@@ -222,7 +223,7 @@ if __name__ == '__main__':
     else:
         stations_near_2 = read_stations(stations_near_2_filename)
 
-    # TODO: merge work1 and work2 stations into common set
+    # merge stations near place 1 and 2 into common set (union)
     stations_merge = list()
     if not os.path.exists(stations_merge_filename):
         stations_merge = merge_stations(stations_near_1, stations_near_2)
@@ -230,3 +231,7 @@ if __name__ == '__main__':
     else:
         stations_merge = read_stations(stations_merge_filename)
     
+    # TODO:
+    for st in stations_merge:
+        pass
+        
