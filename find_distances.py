@@ -101,7 +101,16 @@ def read_stations(stations_filename):
     with open(stations_filename, 'r') as stations_file:
         stations_reader = csv.reader(stations_file, delimiter=',') 
         for row in stations_reader:
-            stations.append(Station(row[0], row[1])) #TODO: read all data!
+            station = Station(row[0], row[1])
+            #read all distance info as a 3-tuple
+            for idx in range(2,len(row), 3):
+                place = row[idx]
+                dist = row[idx+1]
+                dur = row[idx+2]
+                distpl = DistanceToPlace(place, dist, dur, None)
+                station.distance_to_places.append(distpl)
+            stations.append(station)
+                
     # remove entry from header
     if stations and stations[0].name=='Station name':
         stations = stations[1:]
