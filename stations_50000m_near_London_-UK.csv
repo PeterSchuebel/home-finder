@@ -1,0 +1,475 @@
+Abbey Wood,ABW,"London, UK","driving",22690.0,2305.0
+Acton Central,ACC,"London, UK","driving",12802.0,1231.0
+Acton Main Line,AML,"London, UK","driving",13484.0,1208.0
+Addlestone,ASN,"London, UK","driving",45387.0,2843.0
+Alexandra Palace,AAP,"London, UK","driving",12080.0,1487.0
+Amersham,AMR,"London, UK","driving",46101.0,3159.0
+Anerley,ANZ,"London, UK","driving",14107.0,1672.0
+Angel Road,AGR,"London, UK","driving",16062.0,1825.0
+Apsley,APS,"London, UK","driving",46005.0,2947.0
+Ascot (Berks),ACT,"London, UK","driving",49475.0,3328.0
+Ashford (Surrey),AFS,"London, UK","driving",30116.0,2419.0
+Ashtead,AHD,"London, UK","driving",31242.0,2851.0
+Balham,BAL,"London, UK","driving",9403.0,1088.0
+Banstead,BAD,"London, UK","driving",25361.0,2628.0
+Barbican,ZBB,"London, UK","driving",2967.0,461.0
+Barking,BKG,"London, UK","driving",17470.0,1583.0
+Barking Underground,ZBK,"London, UK","driving",19021.0,1582.0
+Barnehurst,BNH,"London, UK","driving",26844.0,2317.0
+Barnes Bridge,BNI,"London, UK","driving",11295.0,1377.0
+Bat & Ball,BBL,"London, UK","driving",45872.0,3215.0
+Battersea Park,BAK,"London, UK","driving",4645.0,574.0
+Bayford,BAY,"London, UK","driving",35954.0,3453.0
+Beaconsfield,BCF,"London, UK","driving",42852.0,2754.0
+Beckenham Hill,BEC,"London, UK","driving",15749.0,1761.0
+Beckenham Junction,BKJ,"London, UK","driving",17399.0,1878.0
+Belvedere,BVD,"London, UK","driving",23251.0,2467.0
+Berrylands,BRS,"London, UK","driving",21191.0,2080.0
+Betchworth,BTO,"London, UK","driving",35920.0,3383.0
+Bethnal Green,BET,"London, UK","driving",5451.0,787.0
+Bexley,BXY,"London, UK","driving",24586.0,2144.0
+Bexleyheath,BXH,"London, UK","driving",23454.0,2130.0
+Bickley,BKL,"London, UK","driving",21668.0,2270.0
+Birkbeck,BIK,"London, UK","driving",14704.0,1747.0
+Blackhorse Road,BHO,"London, UK","driving",14078.0,1655.0
+Bookham,BKA,"London, UK","driving",40354.0,3253.0
+Borough Green & Wrotham,BRG,"London, UK","driving",44843.0,2998.0
+Bowes Park,BOP,"London, UK","driving",14010.0,1698.0
+Brentford,BFD,"London, UK","driving",14609.0,1496.0
+Brentwood,BRE,"London, UK","driving",47501.0,2975.0
+Bricket Wood,BWO,"London, UK","driving",34492.0,2429.0
+Brimsdown,BMD,"London, UK","driving",20567.0,2207.0
+Brixton,BRX,"London, UK","driving",7011.0,856.0
+Brockley,BCY,"London, UK","driving",10051.0,1152.0
+Bromley North,BMN,"London, UK","driving",18816.0,2070.0
+Bromley South,BMS,"London, UK","driving",19677.0,2150.0
+Brondesbury,BSY,"London, UK","driving",9736.0,1146.0
+Brondesbury Park,BSP,"London, UK","driving",8660.0,1060.0
+Brookmans Park,BPK,"London, UK","driving",32154.0,2742.0
+Broxbourne,BXB,"London, UK","driving",30555.0,3178.0
+Bruce Grove,BCV,"London, UK","driving",12708.0,1500.0
+Burnham (Bucks),BNM,"London, UK","driving",41452.0,2557.0
+Bush Hill Park,BHK,"London, UK","driving",19435.0,2124.0
+Bushey,BSH,"London, UK","driving",28096.0,2606.0
+Byfleet & New Haw,BFN,"London, UK","driving",38463.0,2910.0
+Caledonian Rd & Barnsbury,CIR,"London, UK","driving",5432.0,744.0
+Cambridge Heath,CBH,"London, UK","driving",6256.0,898.0
+Camden Road,CMD,"London, UK","driving",4859.0,693.0
+Canada Water,ZCW,"London, UK","driving",6721.0,835.0
+Canonbury,CNN,"London, UK","driving",5793.0,895.0
+Carpenders Park,CPK,"London, UK","driving",30808.0,2965.0
+Carshalton,CSH,"London, UK","driving",19581.0,2149.0
+Carshalton Beeches,CSB,"London, UK","driving",21601.0,2418.0
+Castle Bar Park,CBP,"London, UK","driving",20301.0,1775.0
+Caterham,CAT,"London, UK","driving",29333.0,2999.0
+Catford,CTF,"London, UK","driving",13024.0,1425.0
+Catford Bridge,CFB,"London, UK","driving",13347.0,1510.0
+Chadwell Heath,CTH,"London, UK","driving",23568.0,2093.0
+Chafford Hundred Lakeside,CFH,"London, UK","driving",34512.0,2334.0
+Chalfont & Latimer,CFO,"London, UK","driving",48910.0,2952.0
+Cheam,CHE,"London, UK","driving",20782.0,2293.0
+Chelsfield,CLD,"London, UK","driving",28851.0,2725.0
+Chertsey,CHY,"London, UK","driving",45522.0,2844.0
+Cheshunt,CHN,"London, UK","driving",26278.0,2758.0
+Chessington North,CSN,"London, UK","driving",24787.0,2278.0
+Chessington South,CSS,"London, UK","driving",25311.0,2313.0
+Chingford,CHI,"London, UK","driving",22522.0,2418.0
+Chipstead,CHP,"London, UK","driving",25661.0,2710.0
+Chislehurst,CIT,"London, UK","driving",20233.0,2126.0
+Chiswick,CHK,"London, UK","driving",10992.0,1183.0
+Chorleywood,CLW,"London, UK","driving",45529.0,2708.0
+City Thameslink,CTK,"London, UK","driving",1703.0,264.0
+Clandon,CLA,"London, UK","driving",44861.0,3138.0
+Clapham Junction,CLJ,"London, UK","driving",7631.0,891.0
+Claygate,CLG,"London, UK","driving",27056.0,2324.0
+Clock House,CLK,"London, UK","driving",15561.0,1789.0
+Cobham & Stoke d'Abernon,CSD,"London, UK","driving",33988.0,2752.0
+Cookham,COO,"London, UK","driving",47877.0,3122.0
+Coulsdon South,CDS,"London, UK","driving",24378.0,2545.0
+Coulsdon Town,CDN,"London, UK","driving",23899.0,2483.0
+Crayford,CRY,"London, UK","driving",26421.0,2294.0
+Crews Hill,CWH,"London, UK","driving",25271.0,2677.0
+Cricklewood,CRI,"London, UK","driving",9602.0,1170.0
+Crofton Park,CFT,"London, UK","driving",11149.0,1238.0
+Crystal Palace,CYP,"London, UK","driving",12226.0,1453.0
+Cuffley,CUF,"London, UK","driving",28503.0,2902.0
+Cuxton,CUX,"London, UK","driving",49614.0,3077.0
+Dagenham Dock,DDK,"London, UK","driving",24605.0,1858.0
+Dalston Junction,DLJ,"London, UK","driving",6870.0,941.0
+Dalston Kingsland,DLK,"London, UK","driving",7300.0,1008.0
+Dartford,DFD,"London, UK","driving",29645.0,2599.0
+Datchet,DAT,"London, UK","driving",33635.0,2329.0
+Denham,DNM,"London, UK","driving",30945.0,2195.0
+Denham Golf Club,DGC,"London, UK","driving",32827.0,2314.0
+Denmark Hill,DMK,"London, UK","driving",6481.0,798.0
+Deptford,DEP,"London, UK","driving",9022.0,1064.0
+Dorking Deepdene,DPD,"London, UK","driving",39832.0,3595.0
+Dorking (Main),DKG,"London, UK","driving",40622.0,3406.0
+Dorking West,DKT,"London, UK","driving",41851.0,3519.0
+Dormans,DMS,"London, UK","driving",45810.0,4003.0
+Drayton Green,DRG,"London, UK","driving",20408.0,1787.0
+Drayton Park,DYP,"London, UK","driving",6675.0,910.0
+Dunton Green,DNG,"London, UK","driving",37026.0,3330.0
+Ealing Broadway,EAL,"London, UK","driving",18295.0,1746.0
+Earlsfield,EAD,"London, UK","driving",11176.0,1260.0
+Earlswood (Surrey),ELD,"London, UK","driving",35722.0,3526.0
+East Croydon,ECR,"London, UK","driving",18103.0,2037.0
+East Dulwich,EDW,"London, UK","driving",9670.0,1143.0
+East Grinstead,EGR,"London, UK","driving",49097.0,4194.0
+East Tilbury,ETL,"London, UK","driving",46790.0,2948.0
+Ebbsfleet International,EBD,"London, UK","driving",37605.0,2597.0
+Eden Park,EDN,"London, UK","driving",18334.0,2116.0
+Edmonton Green,EDR,"London, UK","driving",17957.0,2011.0
+Effingham Junction,EFF,"London, UK","driving",39815.0,2997.0
+Egham,EGH,"London, UK","driving",36953.0,2525.0
+Elephant & Castle,EPH,"London, UK","driving",3529.0,449.0
+Elephant & Castle (Underground),ZEL,"London, UK","driving",3536.0,451.0
+Elmers End,ELE,"London, UK","driving",16013.0,1877.0
+Elmstead Woods,ESD,"London, UK","driving",19597.0,2046.0
+Elstree & Borehamwood,ELS,"London, UK","driving",24279.0,2258.0
+Eltham,ELW,"London, UK","driving",15702.0,1774.0
+Emerson Park,EMP,"London, UK","driving",29204.0,2686.0
+Enfield Chase,ENC,"London, UK","driving",19677.0,2304.0
+Enfield Lock,ENL,"London, UK","driving",22766.0,2415.0
+Enfield Town,ENF,"London, UK","driving",19814.0,2265.0
+Epsom Downs,EPD,"London, UK","driving",29237.0,2673.0
+Epsom (Surrey),EPS,"London, UK","driving",27227.0,2526.0
+Erith,ERH,"London, UK","driving",27295.0,2564.0
+Esher,ESH,"London, UK","driving",27932.0,2432.0
+Essex Road,EXR,"London, UK","driving",5863.0,773.0
+Ewell East,EWE,"London, UK","driving",25885.0,2379.0
+Ewell West,EWW,"London, UK","driving",25443.0,2361.0
+Eynsford,EYN,"London, UK","driving",33883.0,2924.0
+Falconwood,FCN,"London, UK","driving",17809.0,1873.0
+Farningham Road,FNR,"London, UK","driving",33453.0,2785.0
+Farringdon,ZFD,"London, UK","driving",2331.0,346.0
+Feltham,FEL,"London, UK","driving",27593.0,2289.0
+Finchley Road & Frognal,FNY,"London, UK","driving",10076.0,1203.0
+Finsbury Park,FPK,"London, UK","driving",8124.0,986.0
+Ford,FOD,"London, UK","driving",11411.0,1338.0
+Forest Gate,FOG,"London, UK","driving",13035.0,1435.0
+Forest Hill,FOH,"London, UK","driving",11410.0,1391.0
+Garston (Hertfordshire),GSN,"London, UK","driving",31164.0,2363.0
+Gatwick Airport,GTW,"London, UK","driving",45727.0,3564.0
+Gerrards Cross,GER,"London, UK","driving",34997.0,2370.0
+Gidea Park,GDP,"London, UK","driving",29086.0,2628.0
+Gipsy Hill,GIP,"London, UK","driving",11532.0,1383.0
+Godstone,GDN,"London, UK","driving",33037.0,3169.0
+Goodmayes,GMY,"London, UK","driving",22246.0,1891.0
+Gordon Hill,GDH,"London, UK","driving",21041.0,2485.0
+Gospel Oak,GPO,"London, UK","driving",6758.0,927.0
+Gravesend,GRV,"London, UK","driving",42396.0,2896.0
+Grays,GRY,"London, UK","driving",36872.0,2435.0
+Green Lane,GNL,"London, UK","driving",22380.0,1903.0
+Greenford,GFD,"London, UK","driving",20044.0,1683.0
+Greenhithe,GNH,"London, UK","driving",36444.0,2687.0
+Greenwich,GNW,"London, UK","driving",11161.0,1262.0
+Grove Park,GRP,"London, UK","driving",15228.0,1659.0
+Guildford,GLD,"London, UK","driving",49894.0,3199.0
+Gunnersbury,GUN,"London, UK","driving",12358.0,1305.0
+Hackbridge,HCB,"London, UK","driving",17933.0,1990.0
+Hackney Central,HKC,"London, UK","driving",8144.0,1073.0
+Hackney Downs,HAC,"London, UK","driving",7890.0,1010.0
+Hackney Wick,HKW,"London, UK","driving",9393.0,1190.0
+Hadley Wood,HDW,"London, UK","driving",22784.0,2645.0
+Hampstead Heath,HDH,"London, UK","driving",7695.0,1030.0
+Hampton Court,HMC,"London, UK","driving",21520.0,2356.0
+Hampton (London),HMP,"London, UK","driving",23594.0,2565.0
+Hampton Wick,HMW,"London, UK","driving",21995.0,2466.0
+Harlesden,HDN,"London, UK","driving",12108.0,1400.0
+Harlow Town,HWN,"London, UK","driving",49011.0,3091.0
+Harold Wood,HRO,"London, UK","driving",32461.0,2815.0
+Harringay,HGY,"London, UK","driving",10606.0,1269.0
+Harringay Green Lanes,HRY,"London, UK","driving",9956.0,1193.0
+Harrow & Wealdstone,HRW,"London, UK","driving",23555.0,2241.0
+Harrow-on-the-Hill,HOH,"London, UK","driving",21291.0,2004.0
+Hatch End,HTE,"London, UK","driving",30488.0,2524.0
+Hatfield (Herts),HAT,"London, UK","driving",36613.0,2881.0
+Haydons Road,HYR,"London, UK","driving",13164.0,1571.0
+Hayes & Harlington,HAY,"London, UK","driving",23465.0,1932.0
+Hayes (Kent),HYS,"London, UK","driving",22601.0,2381.0
+Headstone Lane,HDL,"London, UK","driving",29321.0,2472.0
+Heathrow Airport Terminal 4,HAF,"London, UK","driving",27408.0,2174.0
+Heathrow Airport Terminal 5,HWV,"London, UK","driving",32372.0,2285.0
+"Heathrow Airport Terminals 1, 2 and 3",HXX,"London, UK","driving",27774.0,2141.0
+Hemel Hempstead,HML,"London, UK","driving",42651.0,2757.0
+Hendon,HEN,"London, UK","driving",13059.0,1673.0
+Herne Hill,HNH,"London, UK","driving",7889.0,934.0
+Hersham,HER,"London, UK","driving",30411.0,2657.0
+Hertford East,HFE,"London, UK","driving",40254.0,3358.0
+Hertford North,HFN,"London, UK","driving",48700.0,3343.0
+High Street Kensington Underground,ZHS,"London, UK","driving",8400.0,1050.0
+Higham (Kent),HGM,"London, UK","driving",48702.0,3007.0
+Highams Park,HIP,"London, UK","driving",28674.0,2158.0
+Highbury & Islington,HHY,"London, UK","driving",5672.0,786.0
+Hinchley Wood,HYW,"London, UK","driving",25850.0,2219.0
+Hither Green,HGR,"London, UK","driving",12678.0,1422.0
+Holmwood,HLM,"London, UK","driving",45512.0,3970.0
+Homerton,HMN,"London, UK","driving",11411.0,1338.0
+Honor Oak Park,HPA,"London, UK","driving",12276.0,1378.0
+Horley,HOR,"London, UK","driving",47701.0,3740.0
+Hornsey,HRN,"London, UK","driving",10981.0,1339.0
+Hounslow,HOU,"London, UK","driving",20721.0,2077.0
+How Wood (Herts),HWW,"London, UK","driving",36513.0,2625.0
+Hoxton,HOX,"London, UK","driving",5183.0,703.0
+Ilford,IFD,"London, UK","driving",20369.0,1741.0
+Imperial Wharf,IMW,"London, UK","driving",7212.0,864.0
+Isleworth,ISL,"London, UK","driving",16739.0,1841.0
+Iver,IVR,"London, UK","driving",35646.0,2647.0
+Kempton Park Racecourse,KMP,"London, UK","driving",25165.0,2278.0
+Kemsing,KMS,"London, UK","driving",42426.0,3447.0
+Kenley,KLY,"London, UK","driving",22967.0,2375.0
+Kensal Green,KNL,"London, UK","driving",10011.0,1106.0
+Kensal Rise,KNR,"London, UK","driving",10124.0,1156.0
+Kensington Olympia,KPA,"London, UK","driving",7240.0,964.0
+Kent House,KTH,"London, UK","driving",15250.0,1858.0
+Kentish Town,KTN,"London, UK","driving",5565.0,752.0
+Kentish Town West,KTW,"London, UK","driving",5752.0,805.0
+Kew Bridge,KWB,"London, UK","driving",12739.0,1333.0
+Kew Gardens,KWG,"London, UK","driving",14958.0,1594.0
+Kidbrooke,KDB,"London, UK","driving",13677.0,1466.0
+Kilburn High Road,KBN,"London, UK","driving",7570.0,931.0
+Kings Langley,KGL,"London, UK","driving",42196.0,2868.0
+Kingston,KNG,"London, UK","driving",17512.0,1887.0
+Knebworth,KBW,"London, UK","driving",48856.0,3229.0
+Knockholt,KCK,"London, UK","driving",35042.0,3230.0
+Ladywell,LAD,"London, UK","driving",11577.0,1322.0
+Langley (Berks),LNY,"London, UK","driving",32957.0,2367.0
+Leatherhead,LHD,"London, UK","driving",33226.0,2933.0
+Lee (London),LEE,"London, UK","driving",13532.0,1494.0
+Lewisham,LEW,"London, UK","driving",11557.0,1373.0
+Leyton Midland Road,LEM,"London, UK","driving",12912.0,1635.0
+Leytonstone High Road,LER,"London, UK","driving",13893.0,1608.0
+Limehouse,LHS,"London, UK","driving",7233.0,858.0
+Lingfield,LFD,"London, UK","driving",43704.0,3829.0
+London Blackfriars,BFR,"London, UK","driving",2136.0,315.0
+London Bridge,LBG,"London, UK","driving",3616.0,463.0
+London Cannon Street,CST,"London, UK","driving",2670.0,404.0
+London Charing Cross,CHX,"London, UK","driving",396.0,87.0
+London Euston,EUS,"London, UK","driving",3359.0,497.0
+London Fenchurch Street,FST,"London, UK","driving",3591.0,561.0
+London Fields,LOF,"London, UK","driving",4821.0,697.0
+London Kings Cross,KGX,"London, UK","driving",3579.0,500.0
+London Liverpool Street,LST,"London, UK","driving",3664.0,560.0
+London Marylebone,MYB,"London, UK","driving",2761.0,571.0
+London Paddington,PAD,"London, UK","driving",5223.0,698.0
+London St Pancras International,STP,"London, UK","driving",4427.0,599.0
+London St Pancras (Intl),SPX,"London, UK","driving",4427.0,599.0
+London Victoria,VIC,"London, UK","driving",2519.0,388.0
+London Waterloo,WAT,"London, UK","driving",2468.0,374.0
+London Waterloo East,WAE,"London, UK","driving",1786.0,276.0
+Longcross,LNG,"London, UK","driving",49076.0,2984.0
+Longfield,LGF,"London, UK","driving",37556.0,2736.0
+Loughborough Junction,LGJ,"London, UK","driving",6542.0,787.0
+Lower Sydenham,LSY,"London, UK","driving",14229.0,1722.0
+Maidenhead,MAI,"London, UK","driving",48085.0,2871.0
+Malden Manor,MAL,"London, UK","driving",20058.0,2029.0
+Manor Park,MNP,"London, UK","driving",16023.0,1419.0
+Maryland,MYL,"London, UK","driving",11798.0,1313.0
+Maze Hill,MZH,"London, UK","driving",11883.0,1360.0
+Meopham,MEP,"London, UK","driving",44220.0,2898.0
+Merstham,MHM,"London, UK","driving",31130.0,2976.0
+Mill Hill Broadway,MIL,"London, UK","driving",18580.0,1849.0
+Mitcham Eastfields,MTC,"London, UK","driving",13574.0,1535.0
+Mitcham Junction,MIJ,"London, UK","driving",15704.0,1819.0
+Moorgate,MOG,"London, UK","driving",3601.0,533.0
+Morden South,MDS,"London, UK","driving",17257.0,2027.0
+Mortlake,MTL,"London, UK","driving",13334.0,1425.0
+Motspur Park,MOT,"London, UK","driving",19616.0,1974.0
+Mottingham,MTG,"London, UK","driving",17033.0,1839.0
+New Barnet,NBA,"London, UK","driving",18795.0,2159.0
+New Beckenham,NBC,"London, UK","driving",14709.0,1785.0
+New Cross,NWX,"London, UK","driving",8563.0,936.0
+New Cross Gate,NXG,"London, UK","driving",8244.0,901.0
+New Eltham,NEH,"London, UK","driving",17494.0,1862.0
+New Malden,NEM,"London, UK","driving",19167.0,1907.0
+New Southgate,NSG,"London, UK","driving",14894.0,1758.0
+Norbiton,NBT,"London, UK","driving",17083.0,1878.0
+North Dulwich,NDL,"London, UK","driving",8885.0,1084.0
+North Sheen,NSH,"London, UK","driving",13657.0,1424.0
+North Wembley,NWB,"London, UK","driving",20469.0,1885.0
+Northfleet,NFL,"London, UK","driving",38647.0,2679.0
+Northolt Park,NLT,"London, UK","driving",23555.0,1928.0
+Northumberland Park,NUM,"London, UK","driving",14420.0,1745.0
+Norwood Junction,NWD,"London, UK","driving",15264.0,1742.0
+Nunhead,NHD,"London, UK","driving",9081.0,1101.0
+Nutfield,NUF,"London, UK","driving",34500.0,3340.0
+Oakleigh Park,OKL,"London, UK","driving",15897.0,1961.0
+Ockendon,OCK,"London, UK","driving",34260.0,2331.0
+Old Street,OLD,"London, UK","driving",3893.0,543.0
+Orpington,ORP,"London, UK","driving",25108.0,2609.0
+Otford,OTF,"London, UK","driving",40418.0,3221.0
+Outwood,OUT,"London, UK","driving",40488.0,3776.0
+Oxshott,OXS,"London, UK","driving",30839.0,2491.0
+Oxted,OXT,"London, UK","driving",37142.0,3369.0
+Palmers Green,PAL,"London, UK","driving",15550.0,1857.0
+Park Street,PKT,"London, UK","driving",37865.0,2626.0
+Peckham Rye,PMR,"London, UK","driving",9083.0,1068.0
+Penge East,PNE,"London, UK","driving",14317.0,1676.0
+Penge West,PNW,"London, UK","driving",13918.0,1696.0
+Petts Wood,PET,"London, UK","driving",23465.0,2446.0
+Plumstead,PLU,"London, UK","driving",18366.0,2013.0
+Ponders End,PON,"London, UK","driving",20089.0,2204.0
+Potters Bar,PBR,"London, UK","driving",30590.0,2607.0
+Purfleet,PFL,"London, UK","driving",30105.0,2183.0
+Purley,PUR,"London, UK","driving",21089.0,2225.0
+Purley Oaks,PUO,"London, UK","driving",20667.0,2291.0
+Putney,PUT,"London, UK","driving",8802.0,1103.0
+Queens Park (London),QPW,"London, UK","driving",8138.0,1029.0
+Queens Road (Peckham),QRP,"London, UK","driving",7745.0,857.0
+Queenstown Road (Battersea),QRB,"London, UK","driving",5628.0,698.0
+Radlett,RDT,"London, UK","driving",29179.0,2731.0
+Rainham (Essex),RNM,"London, UK","driving",26091.0,2044.0
+Ravensbourne,RVB,"London, UK","driving",13262.0,1615.0
+Raynes Park,RAY,"London, UK","driving",18589.0,1849.0
+Rectory Road,REC,"London, UK","driving",8880.0,1178.0
+Redbridge,RDB,"London, UK","driving",19412.0,2116.0
+Redhill,RDH,"London, UK","driving",33914.0,3263.0
+Reedham (Surrey),RHM,"London, UK","driving",22444.0,2369.0
+Reigate,REI,"London, UK","driving",36452.0,3484.0
+Richmond (London),RMD,"London, UK","driving",0.0,0.0
+Rickmansworth,RIC,"London, UK","driving",44466.0,2795.0
+Riddlesdown,RDD,"London, UK","driving",23041.0,2457.0
+Roche,ROC,"London, UK","driving",46582.0,3158.0
+Romford,RMF,"London, UK","driving",26534.0,2391.0
+Rotherhithe,ROE,"London, UK","driving",6939.0,865.0
+Rye House,RYH,"London, UK","driving",35912.0,3368.0
+Salfords (Surrey),SAF,"London, UK","driving",37845.0,3635.0
+Sanderstead,SNR,"London, UK","driving",22558.0,2371.0
+Seer Green & Jordans,SRG,"London, UK","driving",44112.0,2762.0
+Selhurst,SRS,"London, UK","driving",15869.0,1730.0
+Seven Kings,SVK,"London, UK","driving",22407.0,1944.0
+Sevenoaks,SEV,"London, UK","driving",45862.0,3318.0
+Shenfield,SNF,"London, UK","driving",48736.0,3110.0
+Shepherd's Bush,SPB,"London, UK","driving",8252.0,989.0
+Shepperton,SHP,"London, UK","driving",29484.0,2728.0
+Shoreditch High Street,SDC,"London, UK","driving",4533.0,660.0
+Shoreham (Kent),SEH,"London, UK","driving",37623.0,3023.0
+Shortlands,SRT,"London, UK","driving",19846.0,2155.0
+Sidcup,SID,"London, UK","driving",21451.0,2139.0
+Slade Green,SGR,"London, UK","driving",28758.0,2500.0
+Slough,SLO,"London, UK","driving",38852.0,2496.0
+Sole Street,SOR,"London, UK","driving",44588.0,2931.0
+South Acton,SAT,"London, UK","driving",12179.0,1377.0
+South Bermondsey,SBM,"London, UK","driving",7002.0,804.0
+South Croydon,SCY,"London, UK","driving",19386.0,2094.0
+South Greenford,SGN,"London, UK","driving",19958.0,1610.0
+South Hampstead,SOH,"London, UK","driving",7904.0,1024.0
+South Kenton,SOK,"London, UK","driving",17128.0,2046.0
+South Merton,SMO,"London, UK","driving",15913.0,1793.0
+South Ruislip,SRU,"London, UK","driving",24582.0,1916.0
+South Tottenham,STO,"London, UK","driving",11188.0,1348.0
+Southall,STL,"London, UK","driving",23808.0,2158.0
+Southbury,SBU,"London, UK","driving",19798.0,2094.0
+St Albans,SAC,"London, UK","driving",39860.0,2900.0
+St Albans Abbey,SAA,"London, UK","driving",39008.0,2799.0
+St Helier (Surrey),SIH,"London, UK","driving",17049.0,1887.0
+St James Street (Walthamstow),SJS,"London, UK","driving",13014.0,1644.0
+St Johns (London),SAJ,"London, UK","driving",9959.0,1083.0
+St Margarets (Herts),SMT,"London, UK","driving",36679.0,3177.0
+St Margarets (London),SMG,"London, UK","driving",1309.0,233.0
+St Mary Cray,SMY,"London, UK","driving",24834.0,2385.0
+Staines,SNS,"London, UK","driving",36603.0,2549.0
+Stamford Hill,SMH,"London, UK","driving",9836.0,1212.0
+Stanford-le-Hope,SFO,"London, UK","driving",42846.0,2698.0
+Stoke Newington,SKW,"London, UK","driving",7867.0,1082.0
+Stone Crossing,SCG,"London, UK","driving",35055.0,2603.0
+Stonebridge Park,SBP,"London, UK","driving",14289.0,1624.0
+Stratford International,SFA,"London, UK","driving",11713.0,1392.0
+Stratford (London),SRA,"London, UK","driving",11816.0,1292.0
+Strawberry Hill,STW,"London, UK","driving",19379.0,2088.0
+Streatham Common,SRC,"London, UK","driving",11773.0,1358.0
+Streatham Hill,SRH,"London, UK","driving",8405.0,969.0
+Streatham(Greater London),STE,"London, UK","driving",11242.0,1301.0
+Strood (Kent),SOO,"London, UK","driving",48318.0,3009.0
+Sudbury & Harrow Road,SUD,"London, UK","driving",18634.0,1689.0
+Sudbury Hill Harrow,SDH,"London, UK","driving",21429.0,1787.0
+Sunbury,SUU,"London, UK","driving",26090.0,2389.0
+Sundridge Park,SUP,"London, UK","driving",18268.0,2037.0
+Sunningdale,SNG,"London, UK","driving",42994.0,2914.0
+Sunnymeads,SNY,"London, UK","driving",35413.0,2491.0
+Surbiton,SUR,"London, UK","driving",19252.0,2188.0
+Sutton Common,SUC,"London, UK","driving",18819.0,2148.0
+Sutton (Surrey),SUO,"London, UK","driving",19995.0,2287.0
+Swanley,SAY,"London, UK","driving",26765.0,2377.0
+Swanscombe,SWM,"London, UK","driving",36904.0,2731.0
+Sydenham Hill,SYH,"London, UK","driving",11689.0,1395.0
+Sydenham (London),SYD,"London, UK","driving",12842.0,1564.0
+Syon Lane,SYL,"London, UK","driving",15620.0,1529.0
+Tadworth,TAD,"London, UK","driving",29928.0,2992.0
+Taplow,TAP,"London, UK","driving",43273.0,2732.0
+Tattenham Corner,TAT,"London, UK","driving",30068.0,2765.0
+Teddington,TED,"London, UK","driving",20531.0,2177.0
+Thames Ditton,THD,"London, UK","driving",22969.0,2563.0
+Theobalds Grove,TEO,"London, UK","driving",25357.0,2658.0
+Thornton Heath,TTH,"London, UK","driving",14943.0,1640.0
+Three Bridges,TBD,"London, UK","driving",49954.0,3786.0
+Tilbury Town,TIL,"London, UK","driving",42798.0,2701.0
+Tolworth,TOL,"London, UK","driving",21585.0,2018.0
+Tooting,TOO,"London, UK","driving",12070.0,1388.0
+Tottenham Hale,TOM,"London, UK","driving",12729.0,1540.0
+Tulse Hill,TUH,"London, UK","driving",8964.0,1101.0
+Turkey Street,TUR,"London, UK","driving",22485.0,2327.0
+Twickenham,TWI,"London, UK","driving",18426.0,1981.0
+Upminster,UPM,"London, UK","driving",36237.0,2592.0
+Upper Halliford,UPH,"London, UK","driving",27384.0,2510.0
+Upper Holloway,UHL,"London, UK","driving",7410.0,970.0
+Upper Warlingham,UWL,"London, UK","driving",25755.0,2654.0
+Vauxhall,VXH,"London, UK","driving",214.0,61.0
+Virginia Water,VIR,"London, UK","driving",41309.0,2880.0
+Waddon,WDO,"London, UK","driving",17922.0,1907.0
+Wallington,WLT,"London, UK","driving",19201.0,2130.0
+Waltham Cross,WLC,"London, UK","driving",24609.0,2571.0
+Walthamstow Central,WHC,"London, UK","driving",13680.0,1726.0
+Walthamstow Queen's Road,WMW,"London, UK","driving",13460.0,1722.0
+Walton-on-Thames,WAL,"London, UK","driving",27236.0,2832.0
+Wandsworth Common,WSW,"London, UK","driving",9389.0,1114.0
+Wandsworth Road,WWR,"London, UK","driving",5257.0,640.0
+Wandsworth Town,WNT,"London, UK","driving",8748.0,1031.0
+Wanstead Park,WNP,"London, UK","driving",13510.0,1509.0
+Wapping,WPE,"London, UK","driving",4866.0,596.0
+Ware (Herts),WAR,"London, UK","driving",38634.0,3388.0
+Watford High Street,WFH,"London, UK","driving",33012.0,2497.0
+Watford Junction,WFJ,"London, UK","driving",32393.0,2517.0
+Watford North,WFN,"London, UK","driving",31259.0,2423.0
+Watton-at-Stone,WAS,"London, UK","driving",46432.0,3610.0
+Welham Green,WMG,"London, UK","driving",32525.0,2691.0
+Welling,WLI,"London, UK","driving",19134.0,2012.0
+Welwyn Garden City,WGC,"London, UK","driving",42035.0,3057.0
+Welwyn North,WLW,"London, UK","driving",44962.0,3036.0
+Wembley Central,WMB,"London, UK","driving",18213.0,1697.0
+Wembley Stadium,WCX,"London, UK","driving",15917.0,1797.0
+West Brompton,WBP,"London, UK","driving",5937.0,844.0
+West Byfleet,WBY,"London, UK","driving",43169.0,3046.0
+West Croydon,WCY,"London, UK","driving",16584.0,1874.0
+West Drayton,WDT,"London, UK","driving",25984.0,1995.0
+West Dulwich,WDU,"London, UK","driving",10428.0,1158.0
+West Ealing,WEA,"London, UK","driving",19897.0,1689.0
+West Ham,WEH,"London, UK","driving",12287.0,1401.0
+West Hampstead,WHD,"London, UK","driving",9114.0,1058.0
+West Hampstead Thameslink,WHP,"London, UK","driving",9319.0,1096.0
+West Horndon,WHR,"London, UK","driving",44966.0,2738.0
+West Norwood,WNW,"London, UK","driving",10357.0,1200.0
+West Ruislip,WRU,"London, UK","driving",28499.0,2067.0
+West Sutton,WSU,"London, UK","driving",19935.0,2257.0
+West Wickham,WWI,"London, UK","driving",19518.0,2218.0
+Westcombe Park,WCB,"London, UK","driving",13897.0,1532.0
+Weybridge,WYB,"London, UK","driving",46697.0,2920.0
+White Hart Lane,WHL,"London, UK","driving",13723.0,1622.0
+Whitechapel,ZWL,"London, UK","driving",4879.0,586.0
+Whitton (London),WTN,"London, UK","driving",20515.0,2044.0
+Whyteleafe,WHY,"London, UK","driving",25774.0,2632.0
+Whyteleafe South,WHS,"London, UK","driving",26282.0,2653.0
+Willesden Junction,WIJ,"London, UK","driving",14695.0,1359.0
+Wimbledon,WIM,"London, UK","driving",14315.0,1706.0
+Wimbledon Chase,WBO,"London, UK","driving",15141.0,1775.0
+Winchmore Hill,WIH,"London, UK","driving",16888.0,2050.0
+Windsor & Eton Central,WNC,"London, UK","driving",40194.0,2601.0
+Windsor & Eton Riverside,WNR,"London, UK","driving",35978.0,2527.0
+Woldingham,WOH,"London, UK","driving",29851.0,3108.0
+Woodgrange Park,WGR,"London, UK","driving",14190.0,1537.0
+Woodmansterne,WME,"London, UK","driving",24842.0,2661.0
+Woolwich Arsenal,WWA,"London, UK","driving",18089.0,1955.0
+Woolwich Dockyard,WWD,"London, UK","driving",16418.0,1773.0
+Worcester Park,WCP,"London, UK","driving",20205.0,1977.0
+Wraysbury,WRY,"London, UK","driving",36241.0,2437.0
