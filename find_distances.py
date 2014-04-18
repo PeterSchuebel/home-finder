@@ -15,6 +15,7 @@ g_gmaps_wait = 0.1 #seconds
 g_gmaps_api_key = "" #needed for geocoding only
 g_gmaps_referrer_url = "" #needed only for local search
 g_gmaps = googlemaps.GoogleMaps(g_gmaps_api_key, g_gmaps_referrer_url)
+g_now = time.time() #seconds since epoch
 
 logger = None
 def setup_logger():
@@ -121,14 +122,18 @@ def read_stations(stations_filename):
     logger.info("Found %d rail stations in CSV file '%s'!", len(stations), stations_filename)
     return stations
 
-def get_stations_close_to(src_stations, mode, place_or_postcode, max_distance_in_m=50000):
+def get_stations_close_to(src_stations, mode, place_or_postcode, max_distance_in_m=50000, departure_time_s_since_epoch=g_now):
     stations = list()
     errors = dict()
     for station in src_stations:
         station_place = "%s, UK" % (station.name)
         logger.info("looking for directions from '%s' to '%s' ...", station_place, place_or_postcode)
         try:
-            dirs = g_gmaps.directions(station_place, place_or_postcode, mode=mode)
+            if mode=="transit":
+                dirs = g_gmaps.directions(station_place, place_or_postcode, mode=mode,
+                        departure_time=departure_time_s_since_epoch)
+            else:
+                dirs = g_gmaps.directions(station_place, place_or_postcode, mode=mode)
         except googlemaps.GoogleMapsError as e:
             logger.error(str(e))
             logger.error(traceback.format_exc())
