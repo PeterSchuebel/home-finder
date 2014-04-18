@@ -27,30 +27,31 @@ logger = setup_logger()
 
 
 class DistanceToPlace(object):
-    def __init__(self, place_name, distance_in_m, duration_in_s, gmaps_directions):
+    def __init__(self, place_name, mode, distance_in_m, duration_in_s, gmaps_directions):
         self.place = str(place_name)
+        self.mode = str(mode)
         self.distance = float(distance_in_m)
         self.duration = float(duration_in_s)
         self.directions = gmaps_directions
     
     def __eq__(self, rhs):
-        return (self.place==rhs.place and self.distance==rhs.distance and 
+        return (self.place==rhs.place and self.mode==rhs.mode and self.distance==rhs.distance and 
                 self.duration==rhs.duration and self.directions==rhs.directions)
 
     def string_list(self):
-        return [self.place, self.distance, self.duration]
+        return [self.place, self.mode, self.distance, self.duration]
     
     def to_csv(self):
-        return "%s, %f, %f" % (
-                self.place, self.distance, self.duration)
+        return "%s, %s, %f, %f" % (
+                self.place, self.mode, self.distance, self.duration)
     
     def __repr__(self):
-        return "%s, %f, %f, %s" % (
-                self.place, self.distance, self.duration, str(self.directions))
+        return "%s, %s, %f, %f, %s" % (
+                self.place, self.mode, self.distance, self.duration, str(self.directions))
     
     def __str__(self):
-        return "name:\t\t%s\ndistance:\t%f\nduration:\t%f\ndirections:\t%s" % (
-                self.place, self.distance, self.duration, str(self.directions))
+        return "name:\t\t%s\nmode:\t\t%s\ndistance:\t%f\nduration:\t%f\ndirections:\t%s" % (
+                self.place, self.mode, self.distance, self.duration, str(self.directions))
                 
         
 class Station(object):
@@ -102,12 +103,13 @@ def read_stations(stations_filename):
         stations_reader = csv.reader(stations_file, delimiter=',') 
         for row in stations_reader:
             station = Station(row[0], row[1])
-            #read all distance info as a 3-tuple
-            for idx in range(2,len(row), 3):
+            #read all distance info as a 4-tuple
+            for idx in range(2,len(row), 4):
                 place = row[idx]
-                dist = row[idx+1]
-                dur = row[idx+2]
-                distpl = DistanceToPlace(place, dist, dur, None)
+                mode = row[idx+1]
+                dist = row[idx+2]
+                dur = row[idx+3]
+                distpl = DistanceToPlace(place, mode, dist, dur, None)
                 station.distance_to_places.append(distpl)
             stations.append(station)
                 
@@ -117,7 +119,7 @@ def read_stations(stations_filename):
     logger.info("Found %d rail stations in CSV file '%s'!", len(stations), stations_filename)
     return stations
 
-def get_stations_close_to(src_stations, place_or_postcode, max_distance_in_m=50000):
+def get_stations_close_to(src_stations, mode, place_or_postcode, max_distance_in_m=50000):
     stations = list()
     errors = dict()
     for station in src_stations:
@@ -136,7 +138,7 @@ def get_stations_close_to(src_stations, place_or_postcode, max_distance_in_m=500
         if dist <= max_distance_in_m:
             logger.info("matched distance: %d meters", dist)
             matched_station = copy.deepcopy(station)
-            distance_to_place = DistanceToPlace(place_or_postcode, dist, dur, dirs)
+            distance_to_place = DistanceToPlace(place_or_postcode, mode, dist, dur, dirs)
             matched_station.distance_to_places.append(distance_to_place)
             stations.append(matched_station)
         time.sleep(gmaps_wait)
@@ -199,10 +201,11 @@ if __name__ == '__main__':
     #   - load previously saved station list, or
     #   - query it from google maps and save it for later use
     
+    mode = "driving"
     # all rail stations in radius around London
     stations_near_0 = list()
     if not os.path.exists(stations_near_0_filename):
-        stations_near_0 = get_stations_close_to(uk_stations, address0, radius0)
+        stations_near_0 = get_stations_close_to(uk_stations, mode, address0, radius0)
         write_stations(stations_near_0, stations_near_0_filename)
     else:
         stations_near_0 = read_stations(stations_near_0_filename)
@@ -210,7 +213,7 @@ if __name__ == '__main__':
     # all rail stations in radius around my work
     stations_near_1 = list()
     if not os.path.exists(stations_near_1_filename):
-        stations_near_1 = get_stations_close_to(stations_near_0, address1, radius1)
+        stations_near_1 = get_stations_close_to(stations_near_0, mode, address1, radius1)
         write_stations(stations_near_1, stations_near_1_filename)
     else:
         stations_near_1 = read_stations(stations_near_1_filename)
@@ -218,7 +221,7 @@ if __name__ == '__main__':
     # all rail stations in radius around Dori's work
     stations_near_2 = list()
     if not os.path.exists(stations_near_2_filename):
-        stations_near_2 = get_stations_close_to(stations_near_0, address2, radius2)
+        stations_near_2 = get_stations_close_to(stations_near_0, mode, address2, radius2)
         write_stations(stations_near_2, stations_near_2_filename)
     else:
         stations_near_2 = read_stations(stations_near_2_filename)
@@ -231,7 +234,8 @@ if __name__ == '__main__':
     else:
         stations_merge = read_stations(stations_merge_filename)
     
-    # TODO:
+    # TODO: get stations with acceptable public transport connections
+    mode = "transit"
     for st in stations_merge:
         pass
         
