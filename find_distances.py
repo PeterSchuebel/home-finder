@@ -11,10 +11,10 @@ import traceback
 import googlemaps  #http://py-googlemaps.sourceforge.net/
                    #https://developers.google.com/maps/documentation/directions/#TravelModes
 
-gmaps_wait = 0.1 #seconds
-gmaps_api_key = "" #needed for geocoding only
-gmaps_referrer_url = "" #needed only for local search
-gmaps = googlemaps.GoogleMaps(gmaps_api_key, gmaps_referrer_url)
+g_gmaps_wait = 0.1 #seconds
+g_gmaps_api_key = "" #needed for geocoding only
+g_gmaps_referrer_url = "" #needed only for local search
+g_gmaps = googlemaps.GoogleMaps(g_gmaps_api_key, g_gmaps_referrer_url)
 
 logger = None
 def setup_logger():
@@ -128,7 +128,7 @@ def get_stations_close_to(src_stations, mode, place_or_postcode, max_distance_in
         station_place = "%s, UK" % (station.name)
         logger.info("looking for directions from '%s' to '%s' ...", station_place, place_or_postcode)
         try:
-            dirs = gmaps.directions(station_place, place_or_postcode, mode=mode)
+            dirs = g_gmaps.directions(station_place, place_or_postcode, mode=mode)
         except googlemaps.GoogleMapsError as e:
             logger.error(str(e))
             logger.error(traceback.format_exc())
@@ -143,7 +143,7 @@ def get_stations_close_to(src_stations, mode, place_or_postcode, max_distance_in
             distance_to_place = DistanceToPlace(place_or_postcode, mode, dist, dur, dirs)
             matched_station.distance_to_places.append(distance_to_place)
             stations.append(matched_station)
-        time.sleep(gmaps_wait)
+        time.sleep(g_gmaps_wait)
     logger.info("encountered %d errors!", len(errors))
     if errors:
         logger.warning("List of failed stations:\n%s", [e.to_csv() for e in errors.values()])
