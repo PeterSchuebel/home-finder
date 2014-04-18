@@ -25,6 +25,13 @@ def setup_logger():
     handler.setFormatter(formatter)
     log.addHandler(handler)
     log.setLevel(logging.INFO)
+    # also add console (stderr) handler for warnings and above
+    handler2 = logging.StreamHandler()
+    handler2.setFormatter(formatter)
+    handler2.setLevel(logging.WARNING)
+    log.addHandler(handler2)
+    log.info("\n")
+    log.info("Set up logger.")
     return log
 logger = setup_logger()
 
