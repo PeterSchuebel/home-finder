@@ -13,6 +13,7 @@ import googlemaps  #http://py-googlemaps.sourceforge.net/
 gmaps_wait = 0.1 #seconds
 gmaps_api_key = "" #needed for geocoding only
 gmaps_referrer_url = "" #needed only for local search
+gmaps = googlemaps.GoogleMaps(gmaps_api_key, gmaps_referrer_url)
 
 logger = None
 def setup_logger():
@@ -176,9 +177,7 @@ def address_to_filename(address):
     f = f.replace(' ', '-').replace(',', '_').replace(':', '_').replace(';', '_')
     return f
     
-if __name__ == '__main__':
-    gmaps = googlemaps.GoogleMaps(gmaps_api_key, gmaps_referrer_url)
-    
+if __name__ == '__main__':    
     # Options
     address0 = 'London, UK'
     address1 = 'SE1 1PP, UK'
