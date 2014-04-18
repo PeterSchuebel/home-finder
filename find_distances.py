@@ -1,4 +1,10 @@
 #!python.exe
+
+# code.google.com:
+# Label:        find_distances_API Project
+# Project ID:   300434117016
+# owner:        peter.schuebel@gmail.com
+
 import csv
 import copy
 import logging
@@ -11,11 +17,17 @@ import traceback
 import googlemaps  #http://py-googlemaps.sourceforge.net/
                    #https://developers.google.com/maps/documentation/directions/#TravelModes
 
-g_gmaps_wait = 0.1 #seconds
-g_gmaps_api_key = "" #needed for geocoding only
-g_gmaps_referrer_url = "" #needed only for local search
-g_gmaps = googlemaps.GoogleMaps(g_gmaps_api_key, g_gmaps_referrer_url)
-g_now = time.time() #seconds since epoch
+###########################################
+# globals and code executed on import ... #
+###########################################
+
+g_now = time.time()         #seconds since epoch
+g_gmaps_wait = 0.1          #seconds
+# for API key info see: https://developers.google.com/console/help/?csw=1#UsingKeys
+#                       https://developers.google.com/maps/documentation/directions/#api_key
+g_gmaps_load_api_key = False
+g_gmaps_api_key = ""        #needed for geocoding only
+g_gmaps_referrer_url = ""   #needed only for local search
 
 logger = None
 def setup_logger():
@@ -35,6 +47,22 @@ def setup_logger():
     return log
 logger = setup_logger()
 
+if g_gmaps_load_api_key:
+    try:
+        gmaps_api_key_file = open(r'gmaps_api_key.txt', 'r')
+        contents = gmaps_api_key_file.readlines()
+        g_gmaps_api_key = contents[0]
+        g_gmaps_referrer_url = contents[1]
+        logger.info("loaded gmaps API key: %s, referrer_url: %s", g_gmaps_api_key, g_gmaps_referrer_url)
+        print "loaded gmaps API key: %s, referrer_url: %s" % (g_gmaps_api_key, g_gmaps_referrer_url)
+    except:
+        pass #ignore if reading failed, just use API without key
+g_gmaps = googlemaps.GoogleMaps(g_gmaps_api_key, g_gmaps_referrer_url)
+
+
+############################
+# classes and functions... #
+############################
 
 class DistanceToPlace(object):
     def __init__(self, place_name, mode, distance_in_m, duration_in_s, gmaps_directions):
@@ -189,7 +217,12 @@ def address_to_filename(address):
     f = str(address).strip()
     f = f.replace(' ', '-').replace(',', '_').replace(':', '_').replace(';', '_')
     return f
+
     
+########
+# main #
+########
+
 if __name__ == '__main__':    
     # Options
     address0 = 'London, UK'
